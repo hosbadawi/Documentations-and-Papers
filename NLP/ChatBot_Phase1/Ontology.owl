@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hosam/ontologies/2022/6/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hosam/ontologies/2022/6/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/hosam/ontologies/2022/6/untitled-ontology-2"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Asteroids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meteoroids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Space_Objects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trips"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Goes_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Take_off"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Customer_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Planet_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Trip_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Trip_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earth_to_Earth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#to_mars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#to_moon"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Asteroids"/>
+        <Class IRI="#Space_Objects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comets"/>
+        <Class IRI="#Space_Objects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meteoroids"/>
+        <Class IRI="#Space_Objects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planets"/>
+        <Class IRI="#Space_Objects"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planets"/>
+        <NamedIndividual IRI="#Earth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trips"/>
+        <NamedIndividual IRI="#Earth_to_Earth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planets"/>
+        <NamedIndividual IRI="#Mars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planets"/>
+        <NamedIndividual IRI="#Moon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trips"/>
+        <NamedIndividual IRI="#to_mars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trips"/>
+        <NamedIndividual IRI="#to_moon"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Take_off"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#Earth_to_Earth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Take_off"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#to_mars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Take_off"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <NamedIndividual IRI="#to_moon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Goes_to"/>
+        <NamedIndividual IRI="#Earth_to_Earth"/>
+        <NamedIndividual IRI="#Earth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Goes_to"/>
+        <NamedIndividual IRI="#to_mars"/>
+        <NamedIndividual IRI="#Mars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Goes_to"/>
+        <NamedIndividual IRI="#to_moon"/>
+        <NamedIndividual IRI="#Moon"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_Name"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal>Customer_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_Name"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal>Customer_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_Name"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal>Customer_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Planet_Name"/>
+        <NamedIndividual IRI="#Earth"/>
+        <Literal>Earth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Trip_ID"/>
+        <NamedIndividual IRI="#Earth_to_Earth"/>
+        <Literal>Trip:123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Trip_type"/>
+        <NamedIndividual IRI="#Earth_to_Earth"/>
+        <Literal>Earth_to_Earth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Planet_Name"/>
+        <NamedIndividual IRI="#Mars"/>
+        <Literal>Mars</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Planet_Name"/>
+        <NamedIndividual IRI="#Moon"/>
+        <Literal>Moon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Trip_ID"/>
+        <NamedIndividual IRI="#to_mars"/>
+        <Literal>Trip:324</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Trip_type"/>
+        <NamedIndividual IRI="#to_mars"/>
+        <Literal>to_mars</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Trip_ID"/>
+        <NamedIndividual IRI="#to_moon"/>
+        <Literal>Trip:412</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Trip_type"/>
+        <NamedIndividual IRI="#to_moon"/>
+        <Literal>to_Moon</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Goes_to"/>
+        <Class IRI="#Trips"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Take_off"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Goes_to"/>
+        <Class IRI="#Planets"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Take_off"/>
+        <Class IRI="#Trips"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Customer_Name"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Planet_Name"/>
+        <Class IRI="#Planets"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Trip_ID"/>
+        <Class IRI="#Trips"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Trip_type"/>
+        <Class IRI="#Trips"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Customer_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Planet_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Trip_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Trip_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
